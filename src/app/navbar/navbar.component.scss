@@ -1,0 +1,53 @@
+nav {
+  width: 100%;
+  padding: .5em;
+  background-color: #026f58;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5%;
+  gap: 1em;
+  box-shadow: 1px 1px 10px 1px #bbb;
+
+  span {
+    padding: 1em;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+}
+
+.tip {
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 1px #25252580;
+  background-color: #fff;
+  position: fixed;
+  z-index: 10;
+
+  button {
+    padding: .5em 1em;
+    border-radius: 5px;
+    background-color: #026f58;
+    color: #fff;
+    display: block;
+    margin: 1em auto 0;
+    cursor: pointer;
+  }
+}
+
+.dark-panel {
+  background-color: #000000aa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.highlighted {
+  z-index: 9;
+  background-color: #026f58;
+  transform: scale(1.5, 1.55);
+  transition: 200ms all;
+}

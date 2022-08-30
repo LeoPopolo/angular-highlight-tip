@@ -1,0 +1,15 @@
+<nav>
+  <span #inicio [ngClass]="{'highlighted': step === 1}">Inicio</span>
+  <span #productos [ngClass]="{'highlighted': step === 2}">Productos</span>
+  <span #nosotros [ngClass]="{'highlighted': step === 3}">Nosotros</span>
+  <span #contacto [ngClass]="{'highlighted': step === 4}">Contacto</span>
+</nav>
+
+<div class="tip" [ngStyle]="{'top': topMenuTip, 'left': leftMenuTip}" *ngIf="step < 5">
+  <p>{{tipText}}</p>
+  <button (click)="nextTip()">Siguiente</button>
+</div>
+
+<div class="dark-panel" *ngIf="step < 5">
+
+</div>
